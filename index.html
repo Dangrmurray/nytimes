@@ -3,10 +3,84 @@
 <head>
 	<title>New York Times Article Search</title>
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	 <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 </head>
 <body>
+		<!-- The Jumbotron Header -->
 
+		<div class="jumbotron">
+    		<h1 class="text-center">New York Times Search</h1>
+      
+  		</div>
+  
+
+  		<div class="container">
+   			 <div class="row">
+
+	<!-- This is where the search fields wil be contained -->
+      			<div class="panel panel-default">
+        			<div class="panel-heading">
+          				<h3 class="panel-title">Search Parameters</h3>
+       			</div>
+        
+
+        <!-- Search Term Form Bar -->
+       			 <div class="panel text-align-left">
+         		 	<form id = "searchForm">
+            <label for="searchInput">Search Term:</label>
+          </form>
+            <input type="text" id="searchInput"><br>
+        </div>
+        <!-- Records to Retrieve -->
+         <div class="panel text-align-left">
+          <form id = "searchForm">
+            <label for="retrieve-input">Number of Records to Retrieve:</label>
+          </form>
+            <input type="text" id="searchInput"><br>
+        </div>
+        <!-- Start Year -->
+         <div class="panel text-align-left">
+          <form id = "searchForm">
+            <label for="searchInput">Start Year:</label>
+          </form>
+            <input type="text" id="searchInput"><br>
+        </div>
+        <!-- End Year -->
+         <div class="panel text-align-left">
+          <form id = "searchForm">
+            <label for="searchInput">End Year:</label>
+          </form>
+            <input type="text" id="searchInput"><br>
+
+	<!-- Submit and clear buttons -->
+		
+
+				<div id="butWrap">
+         			 <button id="searchButton">Search</button>
+          			<button id="clearButton">Clear</button>
+        		</div>
+        	
+        	<br>
+
+        </div>
+    </div>
+<!-- The div in which we will dynamically insert results -->
+     
+
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Search Results</h3>
+        </div>
+        <div class="panel-body text-center">
+          </div>
+      </div>
+  </div>
+
+
+  
 
 
 
@@ -15,7 +89,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Script -->
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script type="text/javascript" src="assets/app.js"></script>
 
 </body>
 </html>
