@@ -10,7 +10,7 @@ var maxArt = $("#maxArt");
 
 
 
-$("#searchButton").on("click", function) {
+$("#searchButton").on("click", function() {
 	var authKey = "a1cddd375d3b40acb5e2f5c63ebf1e11"
 	// 'api-key': "a1cddd375d3b40acb5e2f5c63ebf1e11"
 	var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" + authKey + "&q=" + searchInput + startYr + endYr;
@@ -22,7 +22,12 @@ $("#searchButton").on("click", function) {
 	  console.log(result);
 
 	  var card = ("div");
-	  card.assClass("card")
+	  card.addClass("sampCard");
+	  
+	  var title = ("<h3>resultTitle</h3>");
+	  title.addClass("title");
+
+
 
 
 
@@ -33,7 +38,7 @@ $("#searchButton").on("click", function) {
 	  throw err;
 	});
 
-}
+})
 
 
 
